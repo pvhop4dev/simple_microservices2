@@ -1,4 +1,4 @@
-package UserModel
+package User
 
 type User struct {
 	ID    string `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty" db:"ID"`

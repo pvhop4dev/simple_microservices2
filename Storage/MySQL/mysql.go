@@ -1,4 +1,4 @@
-package Storage
+package MySQL
 
 import (
 	"errors"
