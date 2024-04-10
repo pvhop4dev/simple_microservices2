@@ -4,11 +4,12 @@ import (
 	"errors"
 	"fmt"
 	"log"
-	UserModel "myservice/Entity/User"
-	"myservice/myservice_pb/myservice_pb"
 	"net/http"
 	"os"
 	"time"
+
+	UserModel "github.com/pvhop4dev/simple_microservices2/Entity/User"
+	"github.com/pvhop4dev/simple_microservices2/myservice_pb/myservice_pb"
 
 	"github.com/gin-gonic/gin"
 	"golang.org/x/net/context"
