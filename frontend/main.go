@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	UserModel "github.com/pvhop4dev/simple_microservices2/Entity/User"
+	UserModel "github.com/pvhop4dev/simple_microservices2/entity/user"
 	"github.com/pvhop4dev/simple_microservices2/myservice_pb/myservice_pb"
 
 	"github.com/gin-gonic/gin"

@@ -1,4 +1,4 @@
-package MySQL
+package mysqldao
 
 import (
 	"errors"

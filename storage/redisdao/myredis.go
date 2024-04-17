@@ -1,4 +1,4 @@
-package Redis
+package redisdao
 
 import (
 	"github.com/go-redis/redis"

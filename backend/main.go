@@ -4,11 +4,12 @@ import (
 	json2 "encoding/json"
 	"fmt"
 	"log"
-	UserModel "github.com/pvhop4dev/simple_microservices2/Entity/User"
-	MySQL "github.com/pvhop4dev/simple_microservices2/Storage/MySQL"
-	Redis "github.com/pvhop4dev/simple_microservices2/Storage/Redis"
-	"github.com/pvhop4dev/simple_microservices2/myservice_pb/myservice_pb"
 	"net"
+
+	UserModel "github.com/pvhop4dev/simple_microservices2/entity/user"
+	"github.com/pvhop4dev/simple_microservices2/myservice_pb/myservice_pb"
+	MySQL "github.com/pvhop4dev/simple_microservices2/storage/mysqldao"
+	Redis "github.com/pvhop4dev/simple_microservices2/storage/redisdao"
 
 	"github.com/go-redis/redis"
 	"github.com/goccy/go-json"

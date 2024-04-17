@@ -10,12 +10,16 @@ RUN go mod download
 RUN go mod tidy
 
 COPY backend/ .
-COPY Entity/ .
+COPY entity/ .
 COPY myservice_pb/ .
-COPY Storage/ .
+COPY storage/ .
 RUN go mod download
+# RUN go get github.com/pvhop4dev/simple_microservices2/Entity/User
+# RUN go get github.com/pvhop4dev/simple_microservices2/myservice_pb/myservice_pb
+# RUN go get github.com/pvhop4dev/simple_microservices2/Storage/Redis
+# RUN go get github.com/pvhop4dev/simple_microservices2/Storage/MySQL
 RUN go mod tidy
-RUN go env -w GO111MODULE=off
+
 RUN go build -o main ./main.go
 
 CMD ["./main"]
