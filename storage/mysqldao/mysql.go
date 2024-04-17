@@ -12,8 +12,8 @@ import (
 )
 
 func NewMySQLConnect(ctx context.Context) *sqlx.DB {
-	//dsn := "dbUser:dbPassword@(dbURL:PORT)/dbName"
-	dsn := "root:1234@(localhost:3306)/TestDB"
+	dsn := "root:1234@tcp(localhost:3306)TestDB?parseTime=true&charset=utf8mb4&multiStatements=true"
+	// dsn := "root:1234@(localhost:3306)/TestDB"
 	db, err := sqlx.ConnectContext(ctx, "mysql", dsn)
 	if err != nil {
 		log.Fatalln(err)

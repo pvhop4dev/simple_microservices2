@@ -1,15 +1,15 @@
 # Dockerfile.frontend
-FROM golang:1.16
+FROM golang:1.22.2-alpine
 
 WORKDIR /app
 
-COPY go.mod .
-COPY go.sum .
-
+# COPY go.mod .
+# COPY go.sum .
+COPY frontend/ .
 RUN go mod download
 RUN go mod tidy
 
-COPY frontend/ .
+
 RUN go mod download
 # RUN go get github.com/pvhop4dev/simple_microservices2/Entity/User
 # RUN go get github.com/pvhop4dev/simple_microservices2/myservice_pb/myservice_pb
@@ -18,5 +18,5 @@ RUN go mod download
 # RUN go mod tidy
 
 RUN go build -o main ./main.go
-
+EXPOSE 8080
 CMD ["./main"]
