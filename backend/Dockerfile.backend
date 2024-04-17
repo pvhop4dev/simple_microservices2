@@ -10,7 +10,7 @@ RUN go mod download
 RUN go mod tidy
 
 COPY backend/ .
-COPY entity/ .
+COPY entity2/ .
 COPY myservice_pb/ .
 COPY storage/ .
 RUN go mod download

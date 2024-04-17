@@ -6,7 +6,7 @@ import (
 	"log"
 	"net"
 
-	UserModel "github.com/pvhop4dev/simple_microservices2/entity/user"
+	UserModel "github.com/pvhop4dev/simple_microservices2/entity2/user"
 	"github.com/pvhop4dev/simple_microservices2/myservice_pb/myservice_pb"
 	MySQL "github.com/pvhop4dev/simple_microservices2/storage/mysqldao"
 	Redis "github.com/pvhop4dev/simple_microservices2/storage/redisdao"
